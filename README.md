@@ -2,7 +2,7 @@
 
 ## Overview
 
-This repository contains Lab 1 of the **Network and System Security (DV2636)** course at **Blekinge Institute of Technology, Sweden**. The lab focuses on configuring **networking and firewall settings** in a virtualized environment using **Parallels VMs** on an **Apple Silicon (M3) Mac**.
+This repository contains Lab 1 of the **Network and System Security** course at **Blekinge Institute of Technology, Sweden**. The lab focuses on configuring **networking and firewall settings** in a virtualized environment using **Parallels VMs** on an **Apple Silicon (M3) Mac**.
 
 ## Environment Setup
 

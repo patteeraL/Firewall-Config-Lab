@@ -18,7 +18,7 @@ I configured the **network preferences** for each VM according to the provided *
 
 <img src="Lab environment.png" alt="Environment Setup" width="700">
 
-## ** Network Interface Configuration**
+## Network Interface Configuration
 
 To list the network interfaces available in **Server A guest OS**, run:
 
@@ -30,7 +30,7 @@ To view the manual pages for the ```ip``` command:
 ```
 man ip
 ```
-## ** Finding the Default Gateway**
+## Finding the Default Gateway
 
 On the host OS, to identify the interface that can reach the default gateway, use:
 ```
@@ -40,7 +40,7 @@ On the guest OS, use:
 ```
 ip -4 route
 ```
-## ** Verifying Network Connectivity**
+## Verifying Network Connectivity
 
 To test connectivity, we use Wireshark and ping:
 
@@ -52,11 +52,11 @@ This pings the host-only interface in the host OS. After 4-5 seconds, stop the p
 
 The ICMP traffic in Wireshark confirms that network connectivity is functioning properly.
 
-## ** Establishing SSH Connection**
+## Establishing SSH Connection
 
 To enable SSH from the host OS to the guest OS (Server A):
 
-** Parallels Network Settings**:
+**Parallels Network Settings**:
 
 Click the ⚙️ **cog symbol** > **Hardware** > **NAT adapter network** > **Advanced...** > **Network Preferences...**
 
@@ -66,7 +66,7 @@ Add a port forwarding rule for SSH (**port 22**).
 
 Allow access to HTTP (**port 80**) and HTTPS (**port 443**) in Server A.
 
-## ** Viewing Firewall Rules in the VM**
+## Viewing Firewall Rules in the VM
 
 To inspect the default iptables firewall rules:
 ```
@@ -76,7 +76,7 @@ sudo iptables -t nat -L  # NAT table
 ```
 The default policy for all chains (INPUT, FORWARD, OUTPUT) is ACCEPT.
 
-## ** Blocking HTTP Browsing in the Guest OS**
+## Blocking HTTP Browsing in the Guest OS
 
 To block HTTP traffic in the guest OS:
 ```
@@ -92,7 +92,7 @@ sudo iptables -F OUTPUT
 ```
 Then, test by browsing to http://www.httpvshttps.com.
 
-## ** Configuring Firewall Rules in ```firewall.sh```**
+## Configuring Firewall Rules in ```firewall.sh```
 
 Modify the ```firewall.sh``` script to block HTTP traffic:
 ```

@@ -1,4 +1,4 @@
-# 🔥 Firewall-Config-Lab
+# 🔥 Firewall Config Lab
 
 ## Overview
 

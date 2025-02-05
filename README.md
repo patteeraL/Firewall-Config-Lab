@@ -56,7 +56,7 @@ The ICMP traffic in Wireshark confirms that network connectivity is functioning 
 
 To enable SSH from the host OS to the guest OS (Server A):
 
-🛠** Parallels Network Settings**:
+** Parallels Network Settings**:
 
 Click the ⚙️ **cog symbol** > **Hardware** > **NAT adapter network** > **Advanced...** > **Network Preferences...**
 

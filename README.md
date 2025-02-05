@@ -16,7 +16,7 @@ Since I use an **Apple Silicon (M3) Mac**, I installed **Parallels VMs** to impo
 
 I configured the **network preferences** for each VM according to the provided **network diagrams**. The **MAC address** of each VM is listed in the network preferences.
 
-<img src="Lab environment.png" alt="Environment Setup" width="1000">
+<img src="Lab environment.png" alt="Environment Setup" width="700">
 
 ## **🌐 Network Interface Configuration**
 
